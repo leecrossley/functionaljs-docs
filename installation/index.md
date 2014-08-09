@@ -32,6 +32,12 @@ There is no CDN yet, you should download the latest minified version from [here]
 There are possible issues with using the "λ" character client side. There shouldn't be, but there are. If you experience issues, there is an alternative client version, functional.min.client.js which uses "lambda" instead of "λ". Download the minified client version [here](http://bit.ly/funcclient), reference the js file and lambda will become a global variable.
 {% endnote %}
 
+### Bower
+
+```bash
+bower install functional.js
+```
+
 ## Source code
 
 The source code is available on [Github](https://github.com/leecrossley/functional-js), you can clone the repo:
