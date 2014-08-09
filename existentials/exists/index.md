@@ -1,22 +1,22 @@
-title: λ.exists (not null or undefined)
-description: λ.exists returns false if an object is null or undefined.
+title: fjs.exists (not null or undefined)
+description: fjs.exists returns false if an object is null or undefined.
 ---
 
-## λ.exists
+## fjs.exists
 
-λ.exists returns false if an object is null or undefined (considered not to exist), all other values return true.
+fjs.exists returns false if an object is null or undefined (considered not to exist), all other values return true.
 ### Usage
 
 ```js
-λ.exists(obj);
+fjs.exists(obj);
 ```
 
 ### Examples
 
 ```js
-λ.exists(undefined); // => false
-λ.exists(null); // => false
+fjs.exists(undefined); // => false
+fjs.exists(null); // => false
 
-λ.exists(1); // => true
-λ.exists("abc"); // => true
+fjs.exists(1); // => true
+fjs.exists("abc"); // => true
 ```

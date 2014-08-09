@@ -1,15 +1,15 @@
-title: λ.last in array
-description: λ.last returns the last item in a list that returns true for the iterator function.
+title: fjs.last in array
+description: fjs.last returns the last item in a list that returns true for the iterator function.
 ---
 
-## λ.last
+## fjs.last
 
-λ.last returns the last item in a list that returns true for the iterator function. Can be curried by default.
+fjs.last returns the last item in a list that returns true for the iterator function. Can be curried by default.
 
 ### Usage
 
 ```js
-λ.last(iterator, items);
+fjs.last(iterator, items);
 ```
 
 ### Example
@@ -22,8 +22,8 @@ var odd = function (item) {
     return item % 2 !== 0;
 };
 
-var lastEven = λ.last(even);
-var lastOdd = λ.last(odd);
+var lastEven = fjs.last(even);
+var lastOdd = fjs.last(odd);
 
 lastEven([5, 4, 3, 2, 1]); // => 2
 lastOdd([5, 4, 3, 2, 1]); // => 1

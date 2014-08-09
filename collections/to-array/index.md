@@ -1,15 +1,15 @@
-title: Convert object λ.toArray
-description: λ.toArray converts an object with properties to an array.
+title: Convert object fjs.toArray
+description: fjs.toArray converts an object with properties to an array.
 ---
 
-## λ.toArray
+## fjs.toArray
 
-λ.toArray converts an object with properties to an array.
+fjs.toArray converts an object with properties to an array.
 
 ### Usage
 
 ```js
-λ.toArray(obj);
+fjs.toArray(obj);
 ```
 
 ### Example
@@ -21,6 +21,6 @@ var obj = {
     "p3": null
 };
 
-λ.toArray(obj);
+fjs.toArray(obj);
 // => [["p1", "abc"], ["p2", false], ["p3", null]]
 ```

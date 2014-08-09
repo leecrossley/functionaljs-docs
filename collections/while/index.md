@@ -1,21 +1,21 @@
 title: Select from array while
-description: λ.while returns items from an array while the iterator function returns true.
+description: fjs.while returns items from an array while the iterator function returns true.
 ---
 
-## λ.while
+## fjs.while
 
-λ.while returns items from an array while the iterator function returns true. Unlike [λ.select](/collections/select-filter/), this function limits the  returned array to the first item that evaluates false. Can be curried by default.
+fjs.while returns items from an array while the iterator function returns true. Unlike [fjs.select](/collections/select-filter/), this function limits the  returned array to the first item that evaluates false. Can be curried by default.
 
 ### Usage
 
 ```js
-λ.while(iterator, items);
+fjs.while(iterator, items);
 ```
 
 ### Example
 
 ```js
-var whileEven = λ.while(function (item) {
+var whileEven = fjs.while(function (item) {
     return item % 2 === 0;
 });
 

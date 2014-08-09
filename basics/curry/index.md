@@ -1,15 +1,15 @@
-title: Function currying with λ.curry
+title: Function currying with fjs.curry
 description: Examples of currying JavaScript functions to create higher order functions for reuse.
 ---
 
 ## Currying
 
-λ.curry allows you to easily higher order functions by partially invoking an existing function, without supplying all the arguments of the original function.
+fjs.curry allows you to easily higher order functions by partially invoking an existing function, without supplying all the arguments of the original function.
 
 ### Basic example
 
 ```js
-var concatenate = λ.curry(function(word1, word2) {
+var concatenate = fjs.curry(function(word1, word2) {
     return word1 + " " + word2;
 });
 
@@ -24,7 +24,7 @@ The "concatenateHello" function is a higher order function created by partially 
 ### Another example
 
 ```js
-var add = λ.curry(function(arg1, arg2, arg3) {
+var add = fjs.curry(function(arg1, arg2, arg3) {
     return arg1 + arg2 + arg3;
 });
 

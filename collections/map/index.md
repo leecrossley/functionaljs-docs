@@ -1,15 +1,15 @@
-title: Map array items with λ.map
-description: λ.map allows iteration over a list of items, applying an iterator function to each and returns a new array with the yielded values.
+title: Map array items with fjs.map
+description: fjs.map allows iteration over a list of items, applying an iterator function to each and returns a new array with the yielded values.
 ---
 
-## λ.map
+## fjs.map
 
-λ.map allows iteration over a list of items, applying an iterator function to each and returning a new array with the yielded values. This is similar to the native map function available in modern browsers but uses its own implementation that utilises λ.curry by default.
+fjs.map allows iteration over a list of items, applying an iterator function to each and returning a new array with the yielded values. This is similar to the native map function available in modern browsers but uses its own implementation that utilises fjs.curry by default.
 
 ### Usage
 
 ```js
-λ.map(iterator, items);
+fjs.map(iterator, items);
 ```
 
 ### Example
@@ -21,7 +21,7 @@ var doubleUp = function (number) {
     return number * 2;
 };
 
-var doubleMap = λ.map(doubleUp);
+var doubleMap = fjs.map(doubleUp);
 
 doubleMap(items);
 // => [2, 4, 6];

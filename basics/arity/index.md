@@ -1,15 +1,15 @@
-title: Extending arity with λ.curry
-description: Examples of extending JavaScript function arity with λ.curry.
+title: Extending arity with fjs.curry
+description: Examples of extending JavaScript function arity with fjs.curry.
 ---
 
 ## Arity
 
-The arity of a JavaScript function is the number of arguments *expected* by the function. With λ.curry it is possible to extend this arity beyond the expected length.
+The arity of a JavaScript function is the number of arguments *expected* by the function. With fjs.curry it is possible to extend this arity beyond the expected length.
 
 ### Example
 
 ```js
-var add = λ.curry(function(arg1, arg2) {
+var add = fjs.curry(function(arg1, arg2) {
     return arg1 + arg2;
 });
 

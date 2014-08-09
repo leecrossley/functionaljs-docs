@@ -15,7 +15,7 @@ npm install functional.js --save
 Then to include functional.min.js in your app:
 
 ```js
-var λ = require("functional.js");
+var fjs = require("functional.js");
 ```
 
 ### Update
@@ -26,11 +26,9 @@ npm update functional.js
 
 ## Client side
 
-There is no CDN yet, you should download the latest minified version from [here](http://bit.ly/funcmin) and host it yourself. Once you reference the js file "λ" will become a global variable.
+### Direct include
 
-{% note warn "λ" character issues %}
-There are possible issues with using the "λ" character client side. There shouldn't be, but there are. If you experience issues, there is an alternative client version, functional.min.client.js which uses "lambda" instead of "λ". Download the minified client version [here](http://bit.ly/funcclient), reference the js file and lambda will become a global variable.
-{% endnote %}
+There is no CDN yet, you should download the latest minified version from [here](http://bit.ly/funcmin) and host it yourself. Once you reference the js file "fjs" will become a global variable.
 
 ### Bower
 

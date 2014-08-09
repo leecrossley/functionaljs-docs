@@ -1,19 +1,19 @@
-title: λ.pluck a property
-description: λ.pluck maps / extracts a list of property values from items in an array.
+title: fjs.pluck a property
+description: fjs.pluck maps / extracts a list of property values from items in an array.
 ---
 
-## λ.pluck
+## fjs.pluck
 
-λ.pluck is a special kind of λ.map that extracts a list of property values for a given property name from items in an array.
+fjs.pluck is a special kind of fjs.map that extracts a list of property values for a given property name from items in an array.
 
 ### Usage
 
 ```js
-λ.pluck(propertyName, items);
+fjs.pluck(propertyName, items);
 ```
 
 {% note info Implementation note %}
-It is worth noting that this implementation is the same as λ.map(λ.prop(propertyName), items);
+It is worth noting that this implementation is the same as fjs.map(fjs.prop(propertyName), items);
 {% endnote %}
 
 ### Basic example
@@ -30,7 +30,7 @@ var items = [{
     "p2": 231
 }];
 
-var pluck1 = λ.pluck("p1");
+var pluck1 = fjs.pluck("p1");
 
 pluck1(items);
 // => ["abc", "cab", "bca"]

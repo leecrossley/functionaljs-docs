@@ -1,19 +1,19 @@
-title: λ.clone an array
-description: λ.clone returns a copy of an array.
+title: fjs.clone an array
+description: fjs.clone returns a copy of an array.
 ---
 
-## λ.clone
+## fjs.clone
 
-λ.clone returns a copy of an array. Useful if you want to manipulate an array without modifying the original, such as with the native "reverse" function.
+fjs.clone returns a copy of an array. Useful if you want to manipulate an array without modifying the original, such as with the native "reverse" function.
 
 ### Usage
 
 ```js
-λ.clone(items);
+fjs.clone(items);
 ```
 
 ### Example
 
 ```js
-λ.clone([5, 4, 3, 2, 1]); // => [5, 4, 3, 2, 1]
+fjs.clone([5, 4, 3, 2, 1]); // => [5, 4, 3, 2, 1]
 ```

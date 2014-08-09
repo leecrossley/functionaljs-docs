@@ -1,23 +1,23 @@
-title: λ.truthy object
-description: λ.truthy returns true if an object can be coerced to true in a boolean context.
+title: fjs.truthy object
+description: fjs.truthy returns true if an object can be coerced to true in a boolean context.
 ---
 
-## λ.truthy
+## fjs.truthy
 
-λ.truthy returns true if an object can be coerced to true in a boolean context.
+fjs.truthy returns true if an object can be coerced to true in a boolean context.
 
 ### Usage
 
 ```js
-λ.truthy(obj);
+fjs.truthy(obj);
 ```
 
 ### Examples
 
 ```js
-expect(λ.truthy(false); // => false
-expect(λ.truthy(null); // => false
+expect(fjs.truthy(false); // => false
+expect(fjs.truthy(null); // => false
 
-expect(λ.truthy(true); // => true
-expect(λ.truthy("abc"); // => true
+expect(fjs.truthy(true); // => true
+expect(fjs.truthy("abc"); // => true
 ```

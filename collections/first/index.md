@@ -1,15 +1,15 @@
-title: λ.first in array
-description: λ.first returns the first item in a list that returns true for the iterator function.
+title: fjs.first in array
+description: fjs.first returns the first item in a list that returns true for the iterator function.
 ---
 
-## λ.first
+## fjs.first
 
-λ.first returns the first item in a list that returns true for the iterator function. Can be curried by default.
+fjs.first returns the first item in a list that returns true for the iterator function. Can be curried by default.
 
 ### Usage
 
 ```js
-λ.first(iterator, items);
+fjs.first(iterator, items);
 ```
 
 ### Example
@@ -22,8 +22,8 @@ var odd = function (item) {
     return item % 2 !== 0;
 };
 
-var firstEven = λ.first(even);
-var firstOdd = λ.first(odd);
+var firstEven = fjs.first(even);
+var firstOdd = fjs.first(odd);
 
 firstEven([5, 4, 3, 2, 1]); // => 4
 firstOdd([5, 4, 3, 2, 1]); // => 5

@@ -1,17 +1,17 @@
-title: λ.assign object properties
-description: λ.assign extends/assigns all the properties in the source object(s) to the destination object.
+title: fjs.assign object properties
+description: fjs.assign extends/assigns all the properties in the source object(s) to the destination object.
 ---
 
-## λ.assign
+## fjs.assign
 
-- *Alias:* λ.extend
+- *Alias:* fjs.extend
 
-λ.assign extends/assigns all the properties in the source object(s) to the destination object and returns the destination object. Can be curried by default.
+fjs.assign extends/assigns all the properties in the source object(s) to the destination object and returns the destination object. Can be curried by default.
 
 ### Usage
 
 ```js
-λ.assign(obj1, obj2);
+fjs.assign(obj1, obj2);
 ```
 
 ### Basic example
@@ -26,7 +26,7 @@ var obj2 = {
     prop3: "obj2prop3"
 };
 
-var result = λ.assign(obj1, obj2);
+var result = fjs.assign(obj1, obj2);
 /* => {
     prop1: "obj1prop1",
     prop2: "obj1prop2",
@@ -51,8 +51,8 @@ var obj3 = {
     prop5: "obj3prop5"
 };
 
-var assignToObj1 = λ.assign(obj1);
-assignToObj1(obj2, obj3); // == λ.assign(obj1, obj2, obj3);
+var assignToObj1 = fjs.assign(obj1);
+assignToObj1(obj2, obj3); // == fjs.assign(obj1, obj2, obj3);
 /* => {
     prop1: "obj1prop1",
     prop2: "obj1prop2",

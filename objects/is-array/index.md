@@ -1,20 +1,20 @@
-title: Object λ.isArray
-description: λ.isArray returns true if the object is an array, otherwise false.
+title: Object fjs.isArray
+description: fjs.isArray returns true if the object is an array, otherwise false.
 ---
 
-## λ.isArray
+## fjs.isArray
 
-λ.isArray returns true if the object is an array, otherwise false.
+fjs.isArray returns true if the object is an array, otherwise false.
 
 ### Usage
 
 ```js
-λ.isArray(obj);
+fjs.isArray(obj);
 ```
 
 ### Example
 
 ```js
-λ.isArray([5, 4, 3, 2, 1]); // => true
-λ.isArray({ "a": "b" }); // => false
+fjs.isArray([5, 4, 3, 2, 1]); // => true
+fjs.isArray({ "a": "b" }); // => false
 ```

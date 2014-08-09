@@ -1,21 +1,21 @@
-title: Object λ.isFunction
-description: λ.isFunction returns true if the object is a function, otherwise false.
+title: Object fjs.isFunction
+description: fjs.isFunction returns true if the object is a function, otherwise false.
 ---
 
-## λ.isFunction
+## fjs.isFunction
 
-λ.isFunction returns true if the object is a function, otherwise false.
+fjs.isFunction returns true if the object is a function, otherwise false.
 
 ### Usage
 
 ```js
-λ.isFunction(obj);
+fjs.isFunction(obj);
 ```
 
 ### Example
 
 ```js
-λ.isFunction(λ.reduce(function (arg1, arg2) {
+fjs.isFunction(fjs.reduce(function (arg1, arg2) {
     return arg1 * arg2;
 })); // => true
 ```

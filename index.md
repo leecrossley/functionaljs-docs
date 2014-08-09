@@ -13,7 +13,3 @@ functional.js is a functional JavaScript library. It facilitates [currying](http
 Yes and no. There are many similar functions but libraries like underscore can't be curried in a regular fashion, as the items come before the iterator when supplied as arguments (e.g. (items, iterator) not (iterator, items)). There's also no support in underscore.js for functional-level programming, whereas this is the premise for functional.js.
 
 functional.js is really lightweight and can be used instead of underscore.js. It also has no dependencies and doesn't extend any of JavaScript's standard built-in objects or use native functions that conditionalise implementations.
-
-## Where's the λ key?
-
-Depending on your OS or editor, there are lots of options. If you're really stuck, just copy and paste: λ

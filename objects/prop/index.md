@@ -1,21 +1,21 @@
-title: λ.prop object property
-description: λ.prop returns a function that will return the value of any property name argument.
+title: fjs.prop object property
+description: fjs.prop returns a function that will return the value of any property name argument.
 ---
 
-## λ.prop
+## fjs.prop
 
-λ.prop returns a function that will return the value of any property name argument.
+fjs.prop returns a function that will return the value of any property name argument.
 
 ### Usage
 
 ```js
-λ.prop(propertyName);
+fjs.prop(propertyName);
 ```
 
 ### Example
 
 ```js
-λ.prop("hello")({ "hello": "world" }); // => "world"
+fjs.prop("hello")({ "hello": "world" }); // => "world"
 ```
 
 {% note warn Implementation issue %}

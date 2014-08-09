@@ -1,15 +1,15 @@
 title: Multiple function composition
-description: λ.compose generates higher order functions by combining simpler functions.
+description: fjs.compose generates higher order functions by combining simpler functions.
 ---
 
-## λ.compose
+## fjs.compose
 
-λ.compose facilitates *multiple function composition*. This is the generation of a higher order function by combining simpler functions.
+fjs.compose facilitates *multiple function composition*. This is the generation of a higher order function by combining simpler functions.
 
 ### Usage
 
 ```js
-λ.compose(functions);
+fjs.compose(functions);
 ```
 
 ### Example with 2 functions
@@ -21,7 +21,7 @@ var f = function (a) {
 var g = function (a) {
     return a + 1;
 };
-var composed = λ.compose(f, g);
+var composed = fjs.compose(f, g);
 
 composed(1); // => "hello 2"
 ```
@@ -40,7 +40,7 @@ var f = function (a) {
 var g = function (a) {
     return a * 100;
 };
-var composed = λ.compose(e, f, g);
+var composed = fjs.compose(e, f, g);
 
 composed(2); // => "hello 201"
 ```
