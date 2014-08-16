@@ -1,4 +1,4 @@
-title: Object fjs.isArray
+title: fjs.isArray
 description: fjs.isArray returns true if the argument is an array, otherwise false.
 ---
 

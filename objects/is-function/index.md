@@ -1,4 +1,4 @@
-title: Object fjs.isFunction
+title: fjs.isFunction
 description: fjs.isFunction returns true if the argument is a function, otherwise false.
 ---
 
