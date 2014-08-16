@@ -1,15 +1,15 @@
 title: Object fjs.isArray
-description: fjs.isArray returns true if the object is an array, otherwise false.
+description: fjs.isArray returns true if the argument is an array, otherwise false.
 ---
 
 ## fjs.isArray
 
-fjs.isArray returns true if the object is an array, otherwise false.
+fjs.isArray returns true if the argument is an array, otherwise false.
 
 ### Usage
 
 ```js
-fjs.isArray(obj);
+fjs.isArray(arg);
 ```
 
 ### Example

@@ -1,15 +1,15 @@
 title: Object fjs.isFunction
-description: fjs.isFunction returns true if the object is a function, otherwise false.
+description: fjs.isFunction returns true if the argument is a function, otherwise false.
 ---
 
 ## fjs.isFunction
 
-fjs.isFunction returns true if the object is a function, otherwise false.
+fjs.isFunction returns true if the argument is a function, otherwise false.
 
 ### Usage
 
 ```js
-fjs.isFunction(obj);
+fjs.isFunction(arg);
 ```
 
 ### Example
