@@ -1,5 +1,5 @@
 title: Unique items from array (nub)
-description: fjs.nub returns items from an array while the iterator function returns true.
+description: fjs.nub returns items from an array that are unique.
 ---
 
 ## fjs.nub
@@ -12,7 +12,7 @@ fjs.nub removes duplicate elements from a list and returns a new array containin
 ### Usage
 
 ```js
-fjs.nub(iterator, items);
+fjs.nub(comparator, items);
 ```
 
 ### Example
