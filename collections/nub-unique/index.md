@@ -1,23 +1,27 @@
-title: Select from array while
-description: fjs.while returns items from an array while the iterator function returns true.
+title: Unique items from array (nub)
+description: fjs.nub returns items from an array while the iterator function returns true.
 ---
 
-## fjs.while
+## fjs.nub
 
-fjs.while returns items from an array while the iterator function returns true. Unlike [fjs.select](/collections/select-filter/), this function limits the  returned array to the first item that evaluates false. Can be curried by default.
+- *Alias:* fjs.unique
+- *Alias:* fjs.distinct
+
+fjs.nub removes duplicate elements from a list and returns a new array containing only unique elements, specifically the first of each duplicate element found in the list. Function takes a comparator that determines equality (uniqueness) and the list to run the function against. Can be curried by default.
 
 ### Usage
 
 ```js
-fjs.while(iterator, items);
+fjs.nub(iterator, items);
 ```
 
 ### Example
 
 ```js
-var whileEven = fjs.while(function (item) {
-    return item % 2 === 0;
+var unique = fjs.nub(function (arg1, arg2) {
+    return arg1 === arg2;
 });
 
-whileEven([2, 4, 5, 6]); // => [2, 4]
+unique(["John", "Jane", "Jane", "Jane", "Joe", "John"]);
+// => ["John", "Jane", "Joe"]
 ```
