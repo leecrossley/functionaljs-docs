@@ -17,7 +17,3 @@ fjs.prop(propertyName);
 ```js
 fjs.prop("hello")({ "hello": "world" }); // => "world"
 ```
-
-{% note warn Implementation issue %}
-This implementation is under consideration to be rewritten, inline with other functions that can already be curried in the standard way.
-{% endnote %}
