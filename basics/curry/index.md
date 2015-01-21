@@ -4,7 +4,7 @@ description: Examples of currying JavaScript functions to create higher order fu
 
 ## Currying
 
-fjs.curry allows you to easily higher order functions by partially invoking an existing function, without supplying all the arguments of the original function.
+fjs.curry allows you to easily create higher order functions by partially invoking an existing function, without supplying all the arguments of the original function.
 
 ### Basic example
 
