@@ -7,7 +7,7 @@ description: fjs.nub returns items from an array that are unique.
 - *Alias:* fjs.unique
 - *Alias:* fjs.distinct
 
-fjs.nub removes duplicate elements from a list and returns a new array containing only unique elements, specifically the first of each duplicate element found in the list. Function takes a comparator that determines equality (uniqueness) and the list to run the function against. Can be curried by default.
+fjs.nub removes duplicate elements from a list and returns a new array containing only the unique elements. fjs.nub takes an iterator function and a list to apply the iterator to. The iterator function takes two given elements from the list and determines if they are the same, and therefore unique, or not.  Can be curried by default.
 
 ### Usage
 
@@ -24,4 +24,18 @@ var unique = fjs.nub(function (arg1, arg2) {
 
 unique(["John", "Jane", "Jane", "Jane", "Joe", "John"]);
 // => ["John", "Jane", "Joe"]
+```
+
+fjs.nub returns only the first unique element found in a list. This behavior is more apparent when applied to a list of more complex objects. Care should be taken when using this function for very large lists, as fjs.nub is at worst O(n^2) for lists containing only unique elements.
+
+
+### Another Example
+
+```js
+var unique = fjs.nub(function (arg1, arg2) {
+	return arg1.valueA === arg2.valueA;
+});
+
+unique([{valueA: 1, valueB: 2},{valueA: 2, valueB: 3},{valueA: 1, valueB: 3},{valueA: 1, valueB: 4}]);
+// => [{valueA: 1, valueB: 2},{valueA: 2, valueB: 3}];
 ```
