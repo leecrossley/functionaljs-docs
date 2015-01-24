@@ -26,7 +26,7 @@ unique(["John", "Jane", "Jane", "Jane", "Joe", "John"]);
 // => ["John", "Jane", "Joe"]
 ```
 
-fjs.nub returns only the first unique element found in a list. This behavior is more apparent when applied to a list of more complex objects.
+fjs.nub returns only the first unique element found in a list. This behavior is more apparent when applied to a list of more complex objects. Care should be taken when using this function for very large lists, as fjs.nub is at worst O(n^2) for lists containing only unique elements.
 
 
 ### Another Example
