@@ -4,6 +4,9 @@ description: fjs.first returns the first item in a list that returns true for th
 
 ## fjs.first
 
+- *Alias:* fjs.head
+- *Alias:* fjs.take
+
 fjs.first returns the first item in a list that returns true for the iterator function. Can be curried by default.
 
 ### Usage
