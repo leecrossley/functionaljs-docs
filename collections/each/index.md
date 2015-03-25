@@ -12,7 +12,7 @@ fjs.each allows iteration over a list of items, applying an iterator function to
 fjs.each(iterator, items);
 ```
 
-### Example
+### Basic example
 
 ```js
 var result = [];
@@ -34,11 +34,11 @@ addToResult(items);
 You cannot "break;" from an fjs.each, it is intended to always iterate for all items. Other functions do allow breaking out of loops and achieve similar results.
 {% endnote %}
 
-## Implicit index
+### Implicit index
 
-fjs.each will provide your iterator function with the index in an optional second parameter.
+fjs.each will provide your iterator function with the index as the second argument.
 
-### Example
+### Index example
 
 ```js
 var result = [];
@@ -47,11 +47,12 @@ var items = ["f", "u", "n", "c"];
 var addTo = function (item, i) {
     return result.push({
         "index": i,
-        "item": item});
-    };
+        "item": item
+    });
+};
 
-    var addToResult = fjs.each(addTo);
+var addToResult = fjs.each(addTo);
 
-    addToResult(items);
-    // => [{ "index": 0, "item": "f" } ,{ "index": 1, "item": "u" }, { "index": 2, "item": "n" }, { "index": 3, "item": "c" }]
-    ```
+addToResult(items);
+// => [{ "index": 0, "item": "f" } ,{ "index": 1, "item": "u" }, { "index": 2, "item": "n" }, { "index": 3, "item": "c" }]
+```
