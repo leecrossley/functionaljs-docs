@@ -33,3 +33,25 @@ addToResult(items);
 {% note warn Breaking out %}
 You cannot "break;" from an fjs.each, it is intended to always iterate for all items. Other functions do allow breaking out of loops and achieve similar results.
 {% endnote %}
+
+## Implicit index
+
+fjs.each will provide your iterator function with the index in an optional second parameter.
+
+### Example
+
+```js
+var result = [];
+var items = ["f", "u", "n", "c"];
+
+var addTo = function (item, i) {
+    return result.push({
+        "index": i,
+        "item": item});
+    };
+
+    var addToResult = fjs.each(addTo);
+
+    addToResult(items);
+    // => [{ "index": 0, "item": "f" } ,{ "index": 1, "item": "u" }, { "index": 2, "item": "n" }, { "index": 3, "item": "c" }]
+    ```
